@@ -1,0 +1,18 @@
+git init = sempre que começar um projeto
+
+
+git log = vai mostrar quantas mudanças foram feitas no projeto, vai mostrar a data e a hora e quem foi que fez.
+
+//esse numero no git show é apresentado no git log, cada alteração tem um numero desse diferente.
+git show 55e1c835b606c4ade91174e4c6f3d97e3e3e7989 = para mostrar as alterações feitas
+(ou só coloque git show que aparece a ultima modificação)
+
+git commit -m "update nome arquivo" = para salvar as alterações para serem enviadas ao github
+
+git status = para ver se esta dispinivel para mandar para o github
+
+git push = para enviar ao github
+
+git branch 'nome do arquivo' ou 'nome do arquivo/arquivo' = para criar um branch (um novo subprojeto dentro do projeto principal)
+
+git checkout = para mudar para a branch
