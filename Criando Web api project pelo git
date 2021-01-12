@@ -1,0 +1,69 @@
+CRIANDO REPOSITORIO NO GITHUB de um projeto API no visual studio !! 
+Primeiro vou no github e crio um repositorio
+(coloco README file e um add.gitgnore e branch padrão"master") e crio o repositorio.
+
+depois eu vou em code (do repositorio) e copio o link
+
+depois eu crio uma nova pasta e coloco o mesmo nome do repositorio do github
+depois entre na pasta aperte CTRL + SHIT e clique em abrir powershell
+
+no powershell voce digita "git clone e cola o link do (code do repositorio) e aperta enter
+
+depois de "ls" para ver se deu certo
+
+depois digite "cd .\nomearquivo\ e aperte enter
+depois digite "ls" (vai mostrar o readme do repositorio do github)
+
+depois volte a pasta e vai ver uma outra pasta criada dentro dela com o nome do repositorio e o readme.md
+
+dentro da pasta criada adicione um gitignore (sao arquivos compilados, que são gerados pela IDE)
+
+depois com o CTRL + SWHIFT e botao direito abra o POWERSHELL
+
+digite dotnet new sln -o 'nome do arquivo' e aperte o enter (isso vai criar uma solution)
+
+depois digite cd .\nome arquivo\ e aperte o enter
+
+depois digite dotnet new 'nome projeto' -o 'nome da pasta/repositorio (isso vai criar uma nova pasta porém com o projeto !!! porém ele não ta vinculado a solution )
+
+para vincular a solution siga os passos a seguir
+
+volte para o powershell(que ja estava aberto)
+
+digite dotnet sln add .\nome repositorio/pasta\'repositorio/pasta.csproj'
+
+depois vá para o visual studio no projeto criado 
+
+depois renomeie a pasta do projeto com 00_nomeprojeto_ScaffoldVia terminal, copie e cole no mesmo lugar
+
+vai criar um novo projeto porém altere o nome 01_nomeprojeto_ScaffoldViaVisualStudio (onde será feito todo o projeto) acesse essa pasta e delete tudo dentro.
+
+entre na pasta 01 novamente e copie o endereço C:\\
+
+abra o visual studio
+
+clique em criar um novo projeto e procure ASP.NET core WEB application e crie
+
+selecione a pasta e cole o caminho que guardou de C:\\ e o nome do projeto é o nome do repositorio.
+
+crie o projeto e escolha a opção API (desmarque o Enable OpenApi support é suporte ao swagger) e crie o projeto
+
+volte na pasta criada do repositorio, clique com o direito e abra o git bash
+
+digite git status para mostrar o que tem de novo
+
+depois adicione o gitignore (add .gitignore)
+
+depois digite git commit -m 'adding gitignore' para adicionar no github, aperte o enter
+
+depois adicione o primerio scaffold a pasta 00
+
+digite git add 00(aperte o tab que ele automaticamente coloca o nome da pasta) e aperte o enter
+
+depois digite git commit -m 'Scaffolding a WebApi project via terminal' e aperte o enter
+
+deopis digite git add . e aperte o enter
+
+depois digite git commit -m 'Scaffolding a WebApi project via visual studio' e aperte o enter
+
+para enviar tudo isso pro github digite git push
